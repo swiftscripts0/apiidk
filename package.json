@@ -1,16 +1,20 @@
 {
-  "name": "express-hello-world",
+  "name": "turbovid-api",
   "version": "1.0.0",
-  "description": "Express Hello World on Render",
-  "main": "app.js",
-  "repository": "https://github.com/render-examples/express-hello-world",
-  "author": "Render Developers",
+  "description": "API for fetching iframe src for movies from Turbovid",
+  "main": "server.js",
+  "repository": "https://github.com/your-repo/turbovid-api",
+  "author": "Your Name",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "dependencies": {
-    "express": "^5.0.0"
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.7"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
