@@ -9,6 +9,11 @@ function extractIframeSrc(html) {
     return iframeMatch ? iframeMatch[1] : null;
 }
 
+app.get('/ping', async (req, res) => {
+  res.status(200).json({ message: 'pong' });
+});
+
+
 // Movie endpoint
 app.get('/movie/:id', async (req, res) => {
     const { id } = req.params;
